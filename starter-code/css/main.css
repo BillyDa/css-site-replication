@@ -1,10 +1,64 @@
 /*
 Colors to use:
 dark blue: #06365f
-light blue: #1c5380
-*/
+light*/
 
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  display: grid;
+  background: #fff url("../images/bgtile.png") repeat-x;
+}
+main {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.phone {
+  grid-column-start: 1;
+}
+.content {
+  grid-column-start: 2;
+}
+.login {
+  margin-bottom: 20px;
+}
+h2 {
+  color: #06365f;
+  font-size: 2em;
+  padding-right: 50px;
+}
+.download {
+  display: inline-block;
+  grid-template-columns: 40% 60%;
+  grid-column-start: 2;
+}
+footer {
+  font-size: .6em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 80px;
+}
+ul {
+  font-weight: 600;
+  text-decoration: none;
+}
+li {
+  color: #06365f;
+  display: inline-block;
+  padding-right: 20px;
+}
+footer a {
+  color: #06365f;
+  text-decoration: none;
+  margin-top: 20px
+  padding: 0 20px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer p {
+  grid-column-end: 3;
+  color: lightgrey;
+  text-align: right;
+  margin-bottom: 20px;
+  padding-right: 100px;
 }
